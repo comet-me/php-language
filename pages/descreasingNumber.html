@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP hands-out</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/favicon.ico" alt="Picture Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Balay</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Databases
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">CRUD</a></li>
+              <li><a class="dropdown-item" href="databaseDelete.html">Delete Database</a></li>
+              <li><a class="dropdown-item" href="databaseAdd.html">Add Database</a></li>
+              <li><a class="dropdown-item" href="addingTable.html">Add Table</a></li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pattern
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/increasingTriangle.html">Increasing Triangle</a></li>
+              <li><a class="dropdown-item" href="pages/decreasingTriangle.html">Decreasing Triangle</a></li>
+              <li><a class="dropdown-item" href="pages/increasingNumber.html">Number Ascending</a></li>
+              <li><a class="dropdown-item" href="pages/descreasingNumber.html">Number Descending</a></li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h3>Decreasing Triangle</h3>
+    <code>
+      <span class="text-primary">$n</span> = 5; <span class="text-success">// This $n here will determine the size. For instance this will print 5 rows</span> <br>
+ for($i = 1; $i &#60;= <span class="text-primary">$n</span>; $i++)<span class="text-warning">{</span> <br>
+  <div class="content ps-3">
+    for($j = $i; $j &#60;= <span class="text-primary">$n</span>; $j++){ <br>
+        <span class="ps-3">print "*&nbsp;&nbsp;";</span> <br>
+    } <br>
+  </div>
+    print "&#60;br&#62;"; <br>
+ <span class="text-warning">}</span> <br>
+    </code>
+
+  </div>
+      <script src="../dist/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
