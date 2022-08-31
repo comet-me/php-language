@@ -40,10 +40,10 @@
               Pattern
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="pages/increasingTriangle.html">Increasing Triangle</a></li>
-              <li><a class="dropdown-item" href="pages/decreasingTriangle.html">Decreasing Triangle</a></li>
-              <li><a class="dropdown-item" href="pages/increasingNumber.html">Number Ascending</a></li>
-              <li><a class="dropdown-item" href="pages/descreasingNumber.html">Number Descending</a></li>
+              <li><a class="dropdown-item" href="increasingTriangle.html">Increasing Triangle</a></li>
+              <li><a class="dropdown-item" href="decreasingTriangle.html">Decreasing Triangle</a></li>
+              <li><a class="dropdown-item" href="increasingNumber.html">Number Ascending</a></li>
+              <li><a class="dropdown-item" href="descreasingNumber.html">Number Descending</a></li>
             </ul>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,19 +61,31 @@
   </nav>
   <div class="container">
     <h3>Ascending Number Pattern</h3>
-    <code class="user-select-all">
-      $n = 6; <span class="text-success">// This $n here will determine the size. For instance this will print 5 rows</span> <br>
-   for($i = 1; $i &#60;= $n; $i++){ <span class="text-success">// This will create 5 rows</span> <br>
-    <div class="content ps-3">
-      for($j = 1; $j &#60; $i; $j++){ <span class="text-success">// Cycle One 0x: 1&#60;1 Cycle Two 1x: 1&#60;2 Cycle Three 2x: 1&#60;3,2&#60;3</span> <br>
-                                  <span class="text-success">// Cycle Four 3x: 1&#60;4,2&#60;4,3&#60;4, Cycle Five 4x: 1&#60;5,2&#60;5,3&#60;5,4&#60;5 Cycle Six 5x: 1&#60;6,2&#60;6,...</span> <br>
-          <span class="ps-3">print $j."&nbsp;&nbsp;";</span> <span class="text-success">//cycle two: 1*1 cycle three: 1*1,1*2</span> <br>
-                                          <span class="text-success">//cycle four: 1*1,1*2,1*3 cycle five: 1*1,1*2,1*3,1*4 Cycle Six: 1*1,1*2,...</span>  <br>
-      } <br>
+    <div class="row">
+      <div class="col-lg-6">
+        <code class="user-select-all">
+          $n = 6; <span class="text-success">// This $n here will determine the size. For instance this will print 5 rows</span> <br>
+          for($i = 1; $i &#60;= $n; $i++){ <span class="text-success">// This will create 5 rows</span> <br>
+            <div class="content ps-3">
+              for($j = 1; $j &#60; $i; $j++){ <span class="text-success">// Cycle One 0x: 1&#60;1 Cycle Two 1x: 1&#60;2 Cycle Three 2x: 1&#60;3,2&#60;3</span> <br>
+                                          <span class="text-success">// Cycle Four 3x: 1&#60;4,2&#60;4,3&#60;4, Cycle Five 4x: 1&#60;5,2&#60;5,3&#60;5,4&#60;5 Cycle Six 5x: 1&#60;6,2&#60;6,...</span> <br>
+                  <span class="ps-3">print $j."&nbsp;&nbsp;";</span> <span class="text-success">//cycle two: 1*1 cycle three: 1*1,1*2</span> <br>
+                                                  <span class="text-success">//cycle four: 1*1,1*2,1*3 cycle five: 1*1,1*2,1*3,1*4 Cycle Six: 1*1,1*2,...</span>  <br>
+              } <br>
+            </div>
+              print "&#60;br&#62;"; <br>
+          } <br>
+        </code>
+      </div>
+      <div class="col-lg-6">
+        <h3>Output</h3>
+        <p>1</p>
+        <p>1 2</p>
+        <p>1 2 3</p>
+        <p>1 2 3 4</p>
+        <p>1 2 3 4 5</p>
+      </div>
     </div>
-      print "&#60;br&#62;"; <br>
-   } <br>
-    </code>
 
   </div>
       <script src="../dist/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
